@@ -1,0 +1,16 @@
+ALGORITHM repetition
+VAR
+    str: STRING[]
+    c:CHAR
+    nbr, i:INTEGER
+BEGIN
+    Read(c);
+    Read(str);
+    nbr := 0
+    FOR i FROM 0 TO str.length -1 STEP 1  DO
+        IF (c=str[i]) THEN
+          nbr:= nbr+1  
+        END_IF
+    END_FOR
+    Write('nbr de repetition de cette caractere ', nbr)
+END

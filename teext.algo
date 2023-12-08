@@ -1,0 +1,21 @@
+ALGORITHM sentence
+VAR
+    nbrChar, nbrWrd, nbrVow: INTEGER;
+BEGIN
+  REPEAT
+    read(c;)
+    nbrChar:= nbrChar + 1;
+    IF ( c = 'a' OR c = 'e'c = 'i' OR c = 'o'c = 'u' OR c = 'y') THEN
+    nbrVow := nbrVow + 1
+        
+    END_IF
+    IF (c = ' ' OR c = '.') THEN
+        nbrWrd := nbrWrd + 1
+    END_IF
+  UNTIL (c = '.')
+  
+  write("The length of the sentence:", nbrChar);
+  write("The number of words in the sentence:",nbrWrd);
+  write("The number of vowels in the sentence:",nbrVow);
+
+END
